@@ -6,7 +6,7 @@
 
 `$ pip3 install vcgencmd`
 
-## My raspberry pi info:
+## the raspberry pi info:
 It is a Ubuntu Server 20.04.2 for amr64, with desktop environment Mate. Modified using script from: https://github.com/wimpysworld/desktopify
 
 ```
