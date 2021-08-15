@@ -1,5 +1,5 @@
 {
-    "chain": [
+    "transactions": [
         {
             "remetente": "John",
             "destinatario": "Peter",

@@ -6,25 +6,15 @@ import json
 import time
 import subprocess
 
-S_KEY = str(subprocess.getoutput('arch')) + "_" + str(subprocess.getoutput('lsb_release -cs'))
+ur = str(subprocess.getoutput('cat /dev/urandom | tr -dc \'a-z0-9\' | fold -w 32 | head -n 1'))
+S_KEY = ur + "_" + str(subprocess.getoutput('arch')) + "_" + str(subprocess.getoutput('lsb_release -cs'))
+print(S_KEY)
 SECRET_KEY = S_KEY.encode('utf-8')
 AUTH_SIZE = 32
 
-#chain = [
-#            {
-#                "remetente": "John",
-#                "destinatario": "Peter",
-#                "mensagem": "300"
-#            },
-#            {
-#                "remetente": "Henry",
-#                "destinatario": "Paul",
-#                "mensagem": "120"
-#            }
-#
-#        ]
 f = open('sample.json',)
 data = json.load(f)
+print(data)
 
 block_chain = []
 
