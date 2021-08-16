@@ -31,7 +31,7 @@ def verify(cookie, sig):
         good_sig = sign(cookie)
         return compare_digest(good_sig, sig)
         
-for c in data['chain']:
+for c in data['transactions']:
     cookie = json.dumps(c).encode('utf-8')
     print(cookie)
     sig_cookie = sign(cookie)
@@ -48,7 +48,7 @@ def add_block(block):
         block["hash"] = sign(json.dumps(block).encode('utf-8'))
     block_chain.append(block)
 
-for t in data['chain']:
+for t in data['transactions']:
     add_block(t)
 
 print(block_chain)

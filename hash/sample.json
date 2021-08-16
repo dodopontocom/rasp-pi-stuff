@@ -1,14 +1,12 @@
-{
-    "transactions": [
-        {
-            "remetente": "John",
-            "destinatario": "Peter",
-            "mensagem": "300"
-        },
-        {
-            "remetente": "Henry",
-            "destinatario": "Paul",
-            "mensagem": "120"
-        }
-    ]
-}
+[
+    {
+        "remetente": "John",
+        "destinatario": "Peter",
+        "mensagem": "300"
+    },
+    {
+        "remetente": "Henry",
+        "destinatario": "Paul",
+        "mensagem": "120"
+    }
+]
